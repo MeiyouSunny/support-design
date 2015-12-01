@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.zhangqi.percentagebar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国内互联网公司融资额前20强(2012年至2015年6月)"
+        android:textSize="20sp" />
+
+    <com.zhangqi.percentagebar.PercentageBar
+        android:id="@+id/bargraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crash" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:src="@drawable/ic_launcher"
+        app:elevation="5dp"
+        app:fabSize="normal" />
+
+</LinearLayout>

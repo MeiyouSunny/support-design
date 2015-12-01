@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhangqi.percentagebar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.zhangqi.percentagebar.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyStyle" >
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MyStyle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 设置AppKey 即下一行中的AppID，是您应用的唯一标识，在应用的基本信息页可以看到 -->
+        <meta-data
+            android:name="TESTIN_APPKEY"
+            android:value="0b8902a68db3ede400a4aece71b9322a" />
+        <!-- 设置渠道信息 -->
+        <meta-data
+            android:name="TESTIN_CHANNEL"
+            android:value="vcolco" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+</manifest>
